@@ -14,7 +14,7 @@ A modern command-line task management application built with Node.js and ES modu
 ## Installation
 
 ```bash
-npm install -g task-tracker
+npm install -g tasktrack
 ```
 
 Or clone and install locally:
@@ -23,7 +23,7 @@ Or clone and install locally:
 git clone https://github.com/yourusername/task-tracker.git
 cd task-tracker
 npm install
-npm link
+npm link    #to use globally
 ```
 
 ## Usage
@@ -31,9 +31,9 @@ npm link
 ```bash
 task add              # Add a new task
 task list            # List all tasks
-task list -s pending # List pending tasks
-task complete    # Mark a task as completed
-task delete      # Delete a task
+task list '[pending / completed]' # List pending / completed tasks
+task complete '<id>'     # Mark a task as completed (can be input as string or number)
+task delete '<id>'     # Delete a task  (can be input as string or number)
 task --help          # Show help menu
 ```
 
@@ -56,7 +56,3 @@ task-tracker/
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.

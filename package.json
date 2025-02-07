@@ -1,10 +1,13 @@
 {
-  "name": "task-tracker",
+  "name": "tasktrack",
   "version": "1.0.0",
   "description": "A modern command-line task management application built with Node.js and ES modules.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
+  },
+  "bin": {
+    "task" : "./index.js"
   },
   "type": "module",
   "scripts": {
